@@ -38,12 +38,12 @@ export const useSocket = (input, handleInputChange) => {
 
       ws.onerror = (error) => {
         alert("An error Occured");
-        console.log("An Error Occured: ", error);
       };
 
       ws.onclose = () => {
         alert("Connection Closed");
         console.log("Socket Connection Closed");
+        window.location.reload();
       };
     } catch (error) {
       alert(error);
