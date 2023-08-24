@@ -22,8 +22,8 @@ export const ProfileIcon = styled.img`
   border: 2px solid white;
   position: absolute;
   background: ${({ theme: { colors } }) => colors.darkBlue};
+  right: ${({ type }) => (type === "response" ? null : "15px")};
   left: ${({ type }) => (type === "response" ? "15px" : null)};
-  right: ${({ type }) => (type === "question" ? "15px" : null)};
   bottom: -25px;
 `;
 
