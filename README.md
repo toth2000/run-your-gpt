@@ -1,37 +1,71 @@
-# Frontend Chat with Custom AI Model
+# ConvoAi Repository
 
-Welcome to the hiring task for gstudio.ai! In this task, your objective is to create a frontend application that allows users to chat with a custom AI model. You will be provided with the necessary resources to set up the environment and interact with the AI model.
+This is the frontend website repository of ConvoAi, it provides a platform to interact with a custom AI model easily.
 
-## Objective
+Website: https://convo-ai-swart.vercel.app <br>
 
-Your task is to create a frontend application using React that enables users to have interactive conversations with a custom AI model. You will use the provided Google Colab notebook for running the AI model and the example Python file for interacting with it.
+---
 
-## Provided Resources
+#### Generate Backend URL
 
-1. **Google Colab Notebook**: This [notebook](https://colab.research.google.com/drive/1BkL7zYVYtn0JPYKMPJ0tJmK-zMtINx0P?usp=sharing) contains the AI model and establishes a WebSocket connection along with a normal server for interaction.
+To generate the backend URL that is required as input in the website, please visit the link below and follow the steps mentioned there.
+https://colab.research.google.com/drive/1BkL7zYVYtn0JPYKMPJ0tJmK-zMtINx0P
 
-2. **Example Python File**: Both Files demonstrates how to interact with the AI model programmatically, you can use any one of the two streaming methods to complete the task. But be ready with a reason of why you selected it.
+---
 
-## Tasks
+# Features
+- Ability to chat with AI model 
+- Quick Responses
+- Ability to create multiple chat at the same time
+- Good looking UI
 
-1. **Create a React Frontend**: Develop a user-friendly chat interface using React where users can input their messages and receive responses from the AI model.
+---
+## Requirements
 
-2. **Integrate AI Model**: Use the provided example Python file to communicate with the AI model. Messages from the frontend should be sent to the AI model, and the responses should be displayed back to the user in the chat interface.
+To run the website on you local device, you will only need NodeJs and ReactJs installed in your environement.
 
-3. **Implement Message Limit and Login System**: Limit the number of messages a user can send to 25. Optionally, you can implement a simple login system to track users' messages.
+### Node
+- #### Node installation on Windows
 
-4. **Bonus Points - Incorporate Whisper STT and Silero TTS**: If you want to earn brownie points, consider integrating the Whisper Speech-to-Text (STT) system for voice input and Silero Text-to-Speech (TTS) for generating AI model responses as voice output.
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-## Submission
+- #### Node installation on Ubuntu
 
-Fork this repository and create your solution within it. Once you're done, please provide us with a link to your forked repository for evaluation.
+  You can install nodejs and npm easily with apt install, just run the following commands.
 
-## Evaluation Criteria
+      $ sudo apt install nodejs
+      $ sudo apt install npm
 
-- Functionality: Does the frontend allow users to chat with the AI model effectively?
-- Code Quality: Is the code well-structured, clean, and maintainable?
-- Additional Features: Did you successfully implement the message limit, login system, and any bonus tasks?
-- Creativity: Did you go beyond the basic requirements to make the chat interface more engaging and user-friendly?
-- Documentation: Is your `README.md` clear and comprehensive?
+- #### Other Operating Systems
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
-Feel free to reach out if you have any questions. Good luck!
+If the installation was successful, you should be able to run the following command.
+
+    $ node --version
+    v8.11.3
+
+    $ npm --version
+    6.1.0
+
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
+
+    $ npm install npm -g
+
+
+---
+
+## Install
+
+    $ git clone https://github.com/toth2000/run-your-gpt.git
+    $ cd run-your-gpt
+    $ cd frontend
+
+#### To Run the Website Server locally
+    $ npm install
+    $ npm start
+
+
+## Contribution guidelines
+
+Please refer to our [Contribution Guide](https://github.com/toth2000/SellGuds/blob/master/CONTRIBUTING.md) for contributing to this project. And remeber no contribution is small,  every contribution matters.
