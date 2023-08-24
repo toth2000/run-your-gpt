@@ -1,70 +1,71 @@
-# Getting Started with Create React App
+# ConvoAi Repository
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the frontend website repository of ConvoAi, it provides a platform to interact with a custom AI model easily.
 
-## Available Scripts
+Website: https://convo-ai-swart.vercel.app <br>
 
-In the project directory, you can run:
+---
 
-### `npm start`
+#### Generate Backend URL
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+To generate the backend URL that is required as input in the website, please visit the link below and follow the steps mentioned there.
+https://colab.research.google.com/drive/1BkL7zYVYtn0JPYKMPJ0tJmK-zMtINx0P
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+---
 
-### `npm test`
+# Features
+- Ability to chat with AI model 
+- Quick Responses
+- Ability to create multiple chat at the same time
+- Good looking UI
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+---
+## Requirements
 
-### `npm run build`
+To run the website on you local device, you will only need NodeJs and ReactJs installed in your environement.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Node
+- #### Node installation on Windows
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+  Just go on [official Node.js website](https://nodejs.org/) and download the installer.
+Also, be sure to have `git` available in your PATH, `npm` might need it (You can find git [here](https://git-scm.com/)).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- #### Node installation on Ubuntu
 
-### `npm run eject`
+  You can install nodejs and npm easily with apt install, just run the following commands.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+      $ sudo apt install nodejs
+      $ sudo apt install npm
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- #### Other Operating Systems
+  You can find more information about the installation on the [official Node.js website](https://nodejs.org/) and the [official NPM website](https://npmjs.org/).
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+If the installation was successful, you should be able to run the following command.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+    $ node --version
+    v8.11.3
 
-## Learn More
+    $ npm --version
+    6.1.0
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+If you need to update `npm`, you can make it using `npm`! Cool right? After running the following command, just open again the command line and be happy.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+    $ npm install npm -g
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+---
 
-### Analyzing the Bundle Size
+## Install
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+    $ git clone https://github.com/toth2000/run-your-gpt.git
+    $ cd run-your-gpt
+    $ cd frontend
 
-### Making a Progressive Web App
+#### To Run the Website Server locally
+    $ npm install
+    $ npm start
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
 
-### Advanced Configuration
+## Contribution guidelines
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please refer to our [Contribution Guide](https://github.com/toth2000/SellGuds/blob/master/CONTRIBUTING.md) for contributing to this project. And remeber no contribution is small,  every contribution matters.
