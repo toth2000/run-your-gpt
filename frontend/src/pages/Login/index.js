@@ -7,6 +7,7 @@ import {
   Icon,
   Image,
   LeftContainer,
+  LinkText,
   RightContainer,
   Text,
   Title,
@@ -24,6 +25,7 @@ import Button from "../../components/Button";
 
 import { UserContext } from "../../context/UserContext";
 import { useInput } from "../../hooks/useInput";
+import { websocket_url_generation_link } from "../../constants/url";
 
 const LoginPage = () => {
   const { handleSetUser, setSocketUrl } = useContext(UserContext);
@@ -82,6 +84,7 @@ const LoginPage = () => {
             placeholder="Server URL"
             handleInputChange={handleInputChange}
           />
+          <LinkText href={websocket_url_generation_link} target="_blank" >Do not have a server url? Click here</LinkText>
           <Button
             width="100%"
             padding={"15px"}

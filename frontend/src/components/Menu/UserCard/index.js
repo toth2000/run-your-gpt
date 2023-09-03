@@ -15,6 +15,10 @@ import { UserContext } from "../../../context/UserContext";
 const UserCard = () => {
   const { user } = useContext(UserContext);
 
+  const handleLogout = () => {
+    window.location.reload();
+  }
+
   return (
     <Container>
       <UserDetailContainer>
@@ -25,7 +29,7 @@ const UserCard = () => {
         </DetailTextWrapper>
       </UserDetailContainer>
 
-      <Button padding="10px" type="outlined" text="Logout" />
+      <Button onClick={handleLogout} padding="10px" type="outlined" text="Logout" />
     </Container>
   );
 };

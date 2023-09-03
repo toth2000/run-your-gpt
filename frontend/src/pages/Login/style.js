@@ -77,3 +77,11 @@ export const Wrapper = styled.div`
     width: 50%;
   }
 `;
+
+export const LinkText = styled.a`
+  cursor: pointer;
+  color:  ${({ theme: { colors } }) => colors.buttonBlue};
+  text-decoration: underline;
+  font-size: 14px;
+  margin: 0 0 15px 5px;
+`
